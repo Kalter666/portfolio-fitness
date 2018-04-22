@@ -1,7 +1,26 @@
+@import "../../assets/pristina/style.css";
+
 .container {
-  display: flex;
-  background: url("../../assets/active-activity-adult-864989.png") no-repeat;
-  background-size: auto;
-  width: 100%;
-  height: 100%;
+  background: url("../../assets/fitness/active-activity-adult-864989.jpg") no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 95vh;
+}
+
+.header {
+  background-color: rgba(255, 255, 255, 0.50);
+  display: block;
+  position: relative;
+  width: fit-content;
+  padding: 2%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Pristina', 'Roboto', sans-serif;
+  font-size: 48px;
+  padding: 0;
 }
