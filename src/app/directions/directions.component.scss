@@ -1,0 +1,16 @@
+.dir-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+img {
+  margin: auto;
+  display: block;
+  height: 60px;
+  width: auto;
+}
+
+span {
+  display: block;
+}
