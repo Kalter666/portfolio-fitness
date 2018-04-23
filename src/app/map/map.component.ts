@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MouseEvent } from '@agm/core';
 
 @Component({
   selector: 'app-map',
@@ -19,14 +18,10 @@ export class MapComponent implements OnInit {
     {
       lat: 40.752599,
       lng: -73.815591,
-      label: 'Olga',
-      draggable: false
+      label: '',
+      draggable: false,
     }
   ];
-
-  clickedMarker(label: string, index: number) {
-    console.log(`clicked the marker: ${label || index}`);
-  }
 
   ngOnInit(): void {
   }
