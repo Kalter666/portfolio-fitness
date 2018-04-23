@@ -10,6 +10,7 @@ import { DirectionsComponent } from './directions/directions.component';
 import { PhotosComponent } from './photos/photos.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { FooterComponent } from './footer/footer.component';
+import { PhotoComponent } from './photos/photo/photo.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     DirectionsComponent,
     PhotosComponent,
     ContactsComponent,
-    FooterComponent
+    FooterComponent,
+    PhotoComponent
   ],
   imports: [
     BrowserModule

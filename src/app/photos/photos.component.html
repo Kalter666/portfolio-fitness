@@ -1,3 +1,8 @@
-<p>
-  photos works!
-</p>
+<div class="container">
+  <h2>My Photos</h2>
+  <div class="list">
+    <div class="photos-list" *ngFor="let photo of photos">
+      <app-photo [photo]="photo"></app-photo>
+    </div>
+  </div>
+</div>
