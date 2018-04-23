@@ -11,6 +11,8 @@ import { PhotosComponent } from './photos/photos.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { FooterComponent } from './footer/footer.component';
 import { PhotoComponent } from './photos/photo/photo.component';
+import { MapComponent } from './map/map.component';
+import { AgmCoreModule } from '@agm/core';
 
 
 @NgModule({
@@ -23,10 +25,14 @@ import { PhotoComponent } from './photos/photo/photo.component';
     PhotosComponent,
     ContactsComponent,
     FooterComponent,
-    PhotoComponent
+    PhotoComponent,
+    MapComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAYSRY1745e5uyLopLLbxWNga9iKiw4lkw'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

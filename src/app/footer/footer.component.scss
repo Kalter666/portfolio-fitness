@@ -1,0 +1,30 @@
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.container {
+  font-size: 18px;
+  text-align: justify;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 58%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.vishnevskaya {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  text-align-last: left;
+}
+
+.site-express {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  text-align-last: right;
+}
