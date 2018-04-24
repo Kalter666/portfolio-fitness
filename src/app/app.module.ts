@@ -13,6 +13,10 @@ import { FooterComponent } from './footer/footer.component';
 import { PhotoComponent } from './photos/photo/photo.component';
 import { MapComponent } from './map/map.component';
 import { AgmCoreModule } from '@agm/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material.module';
+import { BigImageComponent } from './photos/photo/big-image/big-image.component';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 
 @NgModule({
@@ -26,15 +30,25 @@ import { AgmCoreModule } from '@agm/core';
     ContactsComponent,
     FooterComponent,
     PhotoComponent,
-    MapComponent
+    MapComponent,
+    BigImageComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    LazyLoadImageModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAYSRY1745e5uyLopLLbxWNga9iKiw4lkw'
     })
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  entryComponents: [
+    BigImageComponent
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
-export class AppModule { }
+export class AppModule {
+}

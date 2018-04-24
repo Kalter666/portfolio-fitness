@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Photo } from '../photos-list';
+import { MatDialog } from '@angular/material';
+import { BigImageComponent } from './big-image/big-image.component';
 
 @Component({
   selector: 'app-photo',
@@ -9,7 +11,13 @@ import { Photo } from '../photos-list';
 export class PhotoComponent implements OnInit {
   @Input() photo: Photo;
 
-  constructor() {
+  constructor(public dialog: MatDialog) {
+  }
+
+  openDialog(): void {
+    this.dialog.open(BigImageComponent, {
+      data: this.photo
+    });
   }
 
   ngOnInit() {

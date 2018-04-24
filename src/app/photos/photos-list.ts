@@ -28,7 +28,7 @@ export const photos: Photo[] = [
   },
   {
     alt: 'active-adult-beautiful-863964',
-    url: '../../assets/fitness/Fitnes_2/active-adult-beautiful-863964'
+    url: '../../assets/fitness/Fitnes_2/active-adult-aerobic-864990'
   },
   // 3
   {
