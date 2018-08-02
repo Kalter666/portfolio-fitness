@@ -1,4 +1,4 @@
-FROM node
+FROM node:carbon
 
 # Создать директорию app
 WORKDIR /app/olga-vishnevskaya
@@ -6,12 +6,10 @@ WORKDIR /app/olga-vishnevskaya
 # Установить зависимости приложения
 RUN npm -g install serve
 # Используется символ подстановки для копирования как package.json, так и package-lock.json
-COPY package*.json ./
+COPY . ./
 
 RUN npm install
 
-# Скопировать исходники приложения
-COPY src /app/olga-vishnevskaya
 # Собрать статические файлы react/vue/angular
 RUN npm run build
 
