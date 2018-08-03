@@ -1,7 +1,6 @@
 footer {
   background-color: black;
   color: white;
-  padding: 20px;
   width: 100%;
 }
 
@@ -14,6 +13,8 @@ footer {
   width: 58%;
   margin: auto;
   justify-content: space-around;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
 }
 
 .vishnevskaya {
@@ -30,15 +31,14 @@ footer {
   text-align-last: right;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1300px)  {
   .container {
-    flex-direction: column;
-    margin: 0;
-    color: white;
-    width: 100vw;
+    width: 100%;
+    padding: 0;
+    justify-content: space-around;
   }
-
-  .site-express .vishnevskaya {
+  .vishnevskaya,
+  .site-express {
     text-align: center;
     text-align-last: center;
   }
